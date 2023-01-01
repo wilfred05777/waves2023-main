@@ -6,7 +6,14 @@ const helloService = async () => {
   } catch (error) {}
 };
 
+const hello = async () => {
+  try {
+    return "Hello Plain Service!!!";
+  } catch (error) {}
+};
+
 ///// this kind of format is to export multiple functions
 module.exports = {
+  hello,
   helloService
 };
